@@ -20,15 +20,14 @@ public class Main {
                 array[i][j] = scanner.nextInt();
             }
         }
-        int count=1;
+        int count = 1;
 
-        for (int element : array[0]) {
-//                for (int i = 0; i < x; i++) {
-//                for (int j = 0; j < y; j++) {
-                    System.out.println("Вывод " + (count++) + "-го числа, умноженного на 3:");
-                    System.out.println(element * 3);
-                }
+        for (int n : array[0]) {
+
+                System.out.println("Вывод " + (count++) + "-го числа, умноженного на 3:");
+                System.out.println( n * 3);
             }
         }
+    }
 
 
