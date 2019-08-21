@@ -18,16 +18,24 @@ public class Main {
             for (int j = 0; j < y; j++) {
                 System.out.println("Введите число в строку " + (i + 1) + " столбец " + (j + 1) + " и нажмите Enter: ");
                 array[i][j] = scanner.nextInt();
+                 }
+        }
+        System.out.println("Вывод матрицы: ");
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
+        System.out.print("Вывод чисел первой  строки, умноженных на 3: ");
+                for (int n : array[0]) {
+
+                    System.out.print(n * 3 + "  ");
+                }
+                System.out.println(" ");
             }
         }
-        int count = 1;
 
-        for (int n : array[0]) {
 
-                System.out.println("Вывод " + (count++) + "-го числа, умноженного на 3:");
-                System.out.println( n * 3);
-            }
-        }
-    }
 
 
